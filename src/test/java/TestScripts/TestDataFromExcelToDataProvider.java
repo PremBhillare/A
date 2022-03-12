@@ -9,7 +9,7 @@ import customMethods.ReadDataFromExcelToDataProvider;
 public class TestDataFromExcelToDataProvider {
 	
 	
-	@Test(dataProvider = "Testdata")
+	@Test(dataProvider = "Testdata",enabled =false)
 	public void test(String name) {
 		System.out.println(name);
 	}
