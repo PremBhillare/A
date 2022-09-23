@@ -8,16 +8,15 @@ import customMethods.ReadDataFromExcelToDataProvider;
 
 public class TestDataFromExcelToDataProvider {
 	
-	
-	@Test(dataProvider = "Testdata",enabled =false)
+		@Test(dataProvider = "Testdata",enabled =true)
 	public void test(String name) {
 		System.out.println(name);
 	}
-	@Parameters("SheetName")
+	
 	@DataProvider(name = "Testdata")
 	public Object[][] getdata(String SheetName){
 		String path = System.getProperty("user.dir")+"\\src\\main\\java\\testData\\Data.xls";
-		Object[][] arrayObject = ReadDataFromExcelToDataProvider.getExcelData(path, SheetName);
+		Object[][] arrayObject = ReadDataFromExcelToDataProvider.getExcelData(path, "Sheet 1");
 		return arrayObject;
 	}
 
