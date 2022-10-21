@@ -8,8 +8,8 @@
   <test thread-count="5" name="Test">
     <classes>
     
-      <class name="TestScripts.Page1Test"/>
-      <parameter name="SheetName" value ="Sheet1" />
+      <class name="testScripts.Page1Test"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

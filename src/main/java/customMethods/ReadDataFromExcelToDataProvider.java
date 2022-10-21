@@ -22,7 +22,6 @@ public class ReadDataFromExcelToDataProvider {
 			arrayExcelData = new String[totalNoOfRows-1][totalNoOfCols];
 			
 			for (int i= 1 ; i < totalNoOfRows; i++) {
-
 				for (int j=0; j < totalNoOfCols; j++) {
 					arrayExcelData[i-1][j] = sh.getCell(j, i).getContents();
 				}

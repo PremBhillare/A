@@ -12,6 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import reporting.ExtentReporting;
 
 public class TestBase {
@@ -29,8 +30,9 @@ public class TestBase {
 	public TestBase()  {
 		prop = new Properties();
 		FileInputStream file=null;
+		String file1= System.getProperty("user.dir")+"\\src\\main\\java\\config\\config.properties";
 		try {
-		 file = new FileInputStream("F:\\eclipse-workspace\\Project\\src\\main\\java\\config\\config.properties");
+		 file = new FileInputStream(file1);
 		 prop.load(file);
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -41,7 +43,8 @@ public class TestBase {
 	public static void initialization() {
 		String browser = prop.getProperty("browser");
 		if (browser.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "\\Drivers\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+//			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "\\Drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if (browser.equalsIgnoreCase("FF")) {
