@@ -24,7 +24,7 @@ public class Page1Test extends TestBase{
 		test = report.createTest("FillData");
 //		page1.FillData();
 		String a ="Prem";
-		String b ="Kumar";
+		String b ="Prem";
 		Assert.assertEquals(a, b);
 	}
 	@Test

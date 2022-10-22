@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 59.195 s <<< FAILURE! - in TestSuite
-FillData(TestScripts.Page1Test)  Time elapsed: 0.08 s  <<< FAILURE!
-java.lang.AssertionError: expected [Kumar] but found [Prem]
-	at TestScripts.Page1Test.FillData(Page1Test.java:28)
-
-test(TestScripts.TestDataFromExcelToDataProvider)  Time elapsed: 0.769 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Some DataProvider public java.lang.Object[][] TestScripts.TestDataFromExcelToDataProvider.getdata(java.lang.String) parameters unresolved:  at 0 type class java.lang.String
-
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.746 s - in TestSuite

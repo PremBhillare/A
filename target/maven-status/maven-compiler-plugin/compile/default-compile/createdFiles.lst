@@ -1,0 +1,6 @@
+customMethods\Methods.class
+base\TestBase.class
+testUtils\TestUtilities.class
+reporting\ExtentReporting.class
+customMethods\ReadDataFromExcelToDataProvider.class
+pages\Page1.class
